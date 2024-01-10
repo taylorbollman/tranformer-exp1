@@ -1,3 +1,12 @@
+# # !touch .env
+# # !touch .gitignore
+# # !echo '.env' >> .gitignore
+# # !echo 'HUGGINGFACE_TOKEN="hf_ONAr"' >> .env'
+# load_dotenv()
+# huggingface_token = os.getenv("HUGGINGFACE_TOKEN")
+# # print(huggingface_token)
+# # huggingface_hub.login(token=huggingface_token, add_to_git_credential=True)
+
 LlamaConfig {
   "attention_bias": false,
   "bos_token_id": 1,
