@@ -34,3 +34,20 @@ rope_scaling={"type": "dynamic", "factor": 2.0}
     #     rope_scaling={"type": "dynamic", "factor": 2.0},
 #     huggingface_token=huggingface_token,
 #     )
+
+
+torchrun --nproc_per_node 2 ./nlp_example.py --mixed_
+
+    # parser = argparse.ArgumentParser(description="Simple example of training script.")
+    # parser.add_argument(
+    #     "--mixed_precision",
+    #     type=str,
+    #     default="no",
+    #     choices=["no", "fp16", "bf16", "fp8"],
+    #     help="Whether to use mixed precision. Choose"
+    #     "between fp16 and bf16 (bfloat16). Bf16 requires PyTorch >= 1.10."
+    #     "and an Nvidia Ampere GPU.",
+    # )
+    # parser.add_argument("--cpu", action="store_true", help="If passed, will train on the CPU.")
+    # print('here ya go:', parser.parse_args())
+    # args = parser.parse_args()
